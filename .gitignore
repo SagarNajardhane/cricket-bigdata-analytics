@@ -1,0 +1,41 @@
+# ---------- Data (never commit raw/large data) ----------
+data/raw/
+data/processed/
+*.json
+*.yaml
+*.zip
+*.tar.gz
+*.parquet
+# allow small sample results
+!results/*.csv
+!results/*.png
+
+# ---------- Hadoop / Spark ----------
+hadoop-*/
+spark-*/
+*.log
+logs/
+metastore_db/
+spark-warehouse/
+derby.log
+
+# ---------- Python ----------
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# ---------- OS / Editors ----------
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# ---------- Secrets ----------
+.env
+*.pem
+*.key
